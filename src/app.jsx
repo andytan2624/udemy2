@@ -1,25 +1,18 @@
 var React = require('react');
-var ThumbnailList = require('./thumbnail-list');
+var Dropdown = require('./dropdown');
 
 var options = {
-    thumbnailData: [{
-        title: 'Inbox',
-        number: 32,
-        header: 'Learn React',
-        description: 'Blah blah blah.',
-        imageUrl: 'https://talks.artificial.io/cross-platform-react/images/react.svg'
-    }, {
-        title: 'Inbox',
-        number: 25,
-        header: 'Learn Gulp',
-        description: 'God damn it',
-        imageUrl: 'https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png'
-    }]
+    title: 'Choose a dessert',
+    items: [
+        'Apple Pie',
+        'Peach Cobbler',
+        'Coconut Cream Pie'
+    ]
 };
 
 // Ask react to render this class
 // Cookie dough cut out
-var element = React.createElement(ThumbnailList, options);
+var element = React.createElement(Dropdown, options);
 
 
 // When we ask react to render this class, we will tell it

@@ -3,32 +3,18 @@
     <script src="https://fb.me/react-15.1.0.js"></script>
     <!-- Rendering components, PUT elements into the DOM -->
     <script src="https://fb.me/react-dom-15.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+        .btn .caret {
+            margin-left: 5px;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
 
+</div>
+<script src="main.js"></script>
 </body>
 
-<script type="text/jsx">
-    // define a react component class
-    // Describes form and function of class
-    // The cookie cutter utensil
-    var HelloWorld = React.createClass({
-        render: function() {
-            return <div>
-                Hello World
-            </div>
-        }
-    });
-
-
-    // Ask react to render this class
-    // Cookie dough cut out
-    var element = React.createElement(HelloWorld);
-
-
-    // When we ask react to render this class, we will tell it
-    // where to palce the rendered element in the dom
-    ReactDOM.render(element, document.body);
-
-</script>
